@@ -26,7 +26,7 @@ def cal_function(X,Y,Z,KxRe,KyRe,KzRe,KxIm, KyIm, KzIm, Area,freq= 0.5,plane= 3)
         E=0
 
         for i in range(0,len(S)):
-            dE = ( j[i]-( j[i]*k0)*k0 ) * np.exp(j*k*k0*R[i])  *S[i]
+            dE = ( j[i]-( j[i]*k0)*k0 ) * np.exp(j*k*k0*R[i])  *[S[i],S[i],S[i] ]
             E = dE + E
         
 
